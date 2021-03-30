@@ -22,4 +22,4 @@ The following functionality is implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://i.imgur.com/UOp1efJ.gif" width=600>
+<img src="https://i.imgur.com/1so2nSJ.gif" width=600>
