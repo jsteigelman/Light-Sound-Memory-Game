@@ -8,10 +8,10 @@ Link to project: https://flaxen-therapeutic-clarinet.glitch.me/
 
 The following functionality is implemented:
 
-* User can toggle button between "Start" and "Stop" to begin or end a game.
-* User can click on a button to make it light up and play a sound.
+* User can toggle button between "Start" and "Stop" to begin or end a game
+* User can click on a button to make it light up and play a sound
 * Computer plays back sequence of clues including sound and visual cue for each button
-* Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess. 
+* Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess
 * User wins the game after guessing a complete pattern (after 8 correct turns)
 * User loses the game after 3 incorrect guesses
 * Playback speeds up on each turn
