@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <!-- import the font styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>
+      Light and Sound <span id="memory_game_title"><br />Memory Game</span>
+    </h1>
+    <button id="startBtn" onclick="startGame()">
+      START
+    </button>
+    <button id="stopBtn" onclick="stopGame()" class="hidden">
+      STOP
+    </button>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myModalBtn">?</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <p id="game-directions-title">Game Directions</p>
+        </div>
+        <div class="modal-body">
+          <p>
+            Test your memory with the Light and Sound Memory Game!
+          </p>
+          <p>
+            The objective of the game is to correctly repeat a longer and longer
+            sequence of signals.
+          </p>
+          <p>
+            To play, press the START button. The computer will give the first
+            signal. Repeat the signal by pressing the same button. But be
+            careful... for every correct guess the computer will extend the
+            sequence by one signal, making the game harder to win!
+          </p>
+          <p>
+            The player who successfully repeats eight signal sequences wins the game.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+        onclick="guess(1)"
+      ></button>
+      <button
+        id="button2"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+        onclick="guess(2)"
+      ></button>
+      <button
+        id="button3"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+        onclick="guess(3)"
+      ></button>
+      <button
+        id="button4"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+        onclick="guess(4)"
+      ></button>
+      <button
+        id="button5"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone()"
+        onclick="guess(5)"
+      ></button>
+    </div>
+  </body>
+</html>

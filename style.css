@@ -1,0 +1,246 @@
+/* CSS files add styling rules to your content */
+* {
+  margin: 0;
+}
+
+
+body {
+  font-family: roboto, helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: #F8F8FB;
+  color: white;
+}
+
+h1 {
+  font-family: roboto, verdana, arial, sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #000;
+  padding-bottom: 48px;
+}
+
+#memory_game_title {
+  color: #F8F8FB;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 49px;
+}
+
+button {
+  border-radius: 46px;
+  border-width: 0px;
+  outline: 0;
+}
+
+#gameButtonArea > button {
+  width: 168px;
+  height: 216px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+#startBtn,
+#stopBtn {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  color: #fff;
+  background: #8E93FF;
+  border-radius: 88px;
+  height: 64px;
+  width: 150px;
+  text-align: center;
+  line-height: 0px;
+  box-shadow: 5px 12px 10px rgba(22, 25, 106, 0.25);
+  margin-bottom: 72px;
+}
+
+#button1 {
+  background-image: linear-gradient(
+    rgba(245, 203, 195, 1),
+    rgba(250, 248, 198, 1)
+  );
+}
+
+#button2 {
+  background-image: linear-gradient(
+    rgba(254, 183, 227, 1),
+    rgba(254, 251, 226, 1)
+  );
+}
+
+#button3 {
+  background-image: linear-gradient(
+    rgba(199, 203, 245, 1),
+    rgba(252, 230, 241, 1)
+  );
+}
+
+#button4 {
+  background-image: linear-gradient(
+    rgba(183, 215, 248, 1),
+    rgba(99, 248, 230, 0.3)
+  );
+}
+
+#button5 {
+  background-image: linear-gradient(
+    rgba(42, 247, 124, 0.56),
+    rgba(221, 253, 181, 0.3)
+  );
+}
+
+#button1:active,
+#button1.lit {
+  background: url("https://cdn.glitch.com/d94cb3cb-225a-4f15-8a26-4c90cff017e9%2FFlip_1.png?v=1617015366064");
+  background-size: 100%;
+}
+
+#button2:active,
+#button2.lit {
+  background: url("https://cdn.glitch.com/d94cb3cb-225a-4f15-8a26-4c90cff017e9%2FFlip_2.png?v=1617015894362");
+  background-size: 100%;
+}
+
+#button3:active,
+#button3.lit {
+  background: url("https://cdn.glitch.com/d94cb3cb-225a-4f15-8a26-4c90cff017e9%2FFlip_3.png?v=1617015894034");
+  background-size: 100%;
+}
+
+#button4:active,
+#button4.lit {
+  background: url("https://cdn.glitch.com/d94cb3cb-225a-4f15-8a26-4c90cff017e9%2FFlip_4.png?v=1617015893744");
+  background-size: 100%;
+}
+
+#button5:active,
+#button5.lit {
+  background: url("https://cdn.glitch.com/d94cb3cb-225a-4f15-8a26-4c90cff017e9%2FFlip_5.png?v=1617015893489");
+  background-size: 100%;
+}
+
+#helpBtn {
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  background: #8E93FF;
+  border-radius: 88px;
+  height: 44px;
+  width: 80px;
+  text-align: center;
+  line-height: 0px;
+  box-shadow: 5px 10px 10px rgba(22, 25, 106, 0.25);
+  margin-bottom: 96px;
+
+  position: absolute;
+  top: 32px;
+  right: 80px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+
+/* The Close Button */
+.close {
+  color: #F8F8FB;
+  float: right;
+  padding-right: 16px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content */
+
+#myModal {
+  color: black;
+}
+
+#myModalBtn {
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  background: #8E93FF;
+  border-radius: 88px;
+  height: 44px;
+  width: 80px;
+  text-align: center;
+  line-height: 0px;
+  box-shadow: 5px 12px 10px rgba(22, 25, 106, 0.25);
+  margin-bottom: 96px;
+  position: absolute;
+  top: 32px;
+  right: 80px;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #F8F8FB;
+  margin: auto;
+  border: 2px solid #8E93FF;
+  width: 55%;
+  top: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.modal-content p {
+  padding-bottom: 24px;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+#game-directions-title {
+  padding: 24px 32px;  
+    font-family: roboto, verdana, arial, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #000;
+}
+
+.modal-header {
+  background: #8E93FF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.modal-body {
+  font-family: roboto, verdana, arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 24px 24px;
+}
