@@ -2,7 +2,7 @@
 
 **Light and Sound Memory Game** is a game in which players must repeat random sequences of lights and sounds by pressing buttons in the correct order. 
 
-Link to project: https://glitch.com/~iron-pointed-fireman
+Link to project: https://flaxen-therapeutic-clarinet.glitch.me/
 
 ## Game Functionality
 
