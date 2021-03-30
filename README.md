@@ -17,3 +17,9 @@ The following functionality is implemented:
 * Playback speeds up on each turn
 * Computer picks a different pattern each time the game is played
 * User can click on a help button to view game directions
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src="" width=600>
